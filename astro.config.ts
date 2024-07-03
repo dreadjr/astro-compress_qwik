@@ -10,5 +10,13 @@ export default defineConfig({
   // adapter: node({
   //   mode: "standalone",
   // }),
-  integrations: [qwik(), compress()],
+  integrations: [
+    qwik(),
+    compress({
+      // JavaScript: false,
+
+      // html compression is causing the issue, uncommment to see resolution
+      // HTML: false,
+    }),
+  ],
 });
