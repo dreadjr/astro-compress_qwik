@@ -18,6 +18,7 @@ export default defineConfig({
       // HTML: false,
       HTML: {
         "html-minifier-terser": {
+          // single setting that resolves the issue
           removeComments: false,
         },
       },
