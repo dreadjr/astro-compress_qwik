@@ -14,9 +14,13 @@ export default defineConfig({
     qwik(),
     compress({
       // JavaScript: false,
-
       // html compression is causing the issue, uncommment to see resolution
       // HTML: false,
+      HTML: {
+        "html-minifier-terser": {
+          removeComments: false,
+        },
+      },
     }),
   ],
 });

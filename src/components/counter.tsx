@@ -13,7 +13,7 @@ export const Counter = component$(() => {
           type="button"
           onClick$={() => count.value++}
         >
-          count is {count.value}
+          count is&nbsp;{count.value}
         </button>
       </div>
     </>
